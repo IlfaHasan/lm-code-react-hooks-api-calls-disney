@@ -19,8 +19,8 @@ const App : React.FC = () => {
   };
 
   useEffect(() => {
-    getCharacters(1);
-  }, []);
+    getCharacters(currentPage);
+  }, [currentPage]);
 
   return (
     <div className="page">
